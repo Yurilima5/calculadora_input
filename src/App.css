@@ -18,9 +18,39 @@ header{
 }
 
 main{
+    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50vh;
     background-color: #b4ccb9;
+}
+
+input{
+    border-radius: 20px;
+    text-align: center;
+    border: solid 2px ;
+    border-color: #5a5a5a;
+}
+
+.operacao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botoes{
+
+    height: 10vh;
+    border: solid;
+    width: 6vw;
+}
+
+.valores{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid;
 }
