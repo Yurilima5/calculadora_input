@@ -53,21 +53,28 @@ function App() {
       <body>
         <header>
           <h2>Calculadora!</h2>
-          <p>Insira os valores desejados no input escolha uma operação e veja o resultado!</p>
+          <p>Insira os valores desejados no input, escolha uma operação e veja o resultado!</p>
         </header>
 
         <main>
+          <section class="sessaoCalculadora">
+
           <section class="operacao">
           <h1>{valor1}</h1>
-          <h1>{operator}</h1>
+          <h1 class="operador">{operator}</h1>
           <h1>{valor2}</h1>
-          <h1>{resultado}</h1>
+          <h1 class="resultado">{resultado}</h1>
           </section>
 
          <section class="valores">
-          <input onChange={capturarValor1} type="number" />
-          <input onChange={capturarValor2} type="number" />
-         </section>
+          <input 
+          placeholder='"Primeiro valor"'
+          onChange={capturarValor1} type="number"
+           />
+          <input 
+          placeholder='"Segundo valor"'
+          onChange={capturarValor2} type="number" 
+          />
          
         <section class="botoes">
           <button onClick={capturarSinal} value={"+"}>+</button>
@@ -76,8 +83,12 @@ function App() {
           <button onClick={capturarSinal} value={"x"}>x</button>
           <button onClick={capturarSinal} value={"%"}>%</button>
           <button onClick={limpar} value={"ac"} >AC</button>
-          <button onClick={calcular} value={"="}>=</button>
+          <button onClick={calcular} value={"="}
+          class="igual">=</button>
           </section>
+          </section>
+
+          </section> 
         </main>
       </body>
     </>

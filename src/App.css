@@ -3,6 +3,7 @@
    padding: 0;
    box-sizing: border-box;
    margin: 0;
+   font-family: 'Mukta', sans-serif;
 }
 
 body{
@@ -11,46 +12,95 @@ body{
 
 header{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-bottom: solid darkgray 2px;
     height: 20vh;
-    background-color: #4ecdc4;
+    background-color: #0b8770;
 }
 
 main{
-    flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 70vh;
+    width: 75%;
+    margin-left: 12vw;
+    border-radius: 0 0 10px 10px;
     background-color: #b4ccb9;
 }
 
 input{
     border-radius: 20px;
     text-align: center;
+    height: 4vh;
+    font-size: 16px;
     border: solid 2px ;
     border-color: #5a5a5a;
 }
 
+p{
+    font-style: italic;
+    font-size: 20px;
+
+}
+
+
+
+.sessaoCalculadora{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+    width:  20vw;
+}
+
 .operacao{
+    background-color: #e1f5c4;
+    border-radius: 13px;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: 6vw;
+    height: 23vh;
 }
 
 .botoes{
+    width: 4.5vw;
+}
 
-    height: 10vh;
-    border: solid;
-    width: 6vw;
+.operador{
+    font-size: 25px;
+    padding-right: 2;
+    color: #ff6a5a;
+}
+.resultado{
+    color: #314d4a;
+    font-size: 23px;
+}
+
+button{
+    text-align: center;
+    width: 2vw;
+    height: 4vh;
+    border: solid gray 1px;
+    border-radius: 13px;
+    font-size: 2vh;
+    font-weight: bolder;
+}
+
+.igual{
+    border-radius: 15px;
+    width: 4vw;
 }
 
 .valores{
     flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: center;
-    border: solid;
+    justify-content: space-around;
+    height: 25vh;
 }
